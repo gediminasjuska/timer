@@ -8,4 +8,5 @@ let x = setInterval(function () {
   let minutes = Math.floor((left % (1000 * 60 * 60)) / (1000 * 60));
   let seconds = Math.floor((left % (1000 * 60)) / 1000);
   document.getElementById("demo").innerHTML =
-    hours + "h
+    hours + "h " + minutes + "m " + seconds + "s ";
+}, 1000);
